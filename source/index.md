@@ -309,22 +309,22 @@ response = RestClient.get 'http://organization_slug.scalus.com/api/users/32', {
 ```json
 {
   "data": {
-    "type": “users”,
-    "id": “32”,
+    "type": "users",
+    "id": "32",
     "attributes": {
-      “first_name”: “Johnny”,
-      “last_name”: “Dee”,
-      “email”: “johnny.dee@scalusapi.com”,
-      "status": “active”,
-      “organization_id": 19,
-      “team_id": 34,
-      "kind": “organization”,
+      "first_name": "Johnny",
+      "last_name": "Dee",
+      "email": "johnny.dee@scalusapi.com",
+      "status": "active",
+      "organization_id": 19,
+      "team_id": 34,
+      "kind": "organization",
       "send_task_notifications": false,
       "has_daily_digest": true,
       "created_at": "2015-09-19 20:59:55"
     },
     "links": {
-      "self": "http://example.com/api/users/32”
+      "self": "http://example.com/api/users/32"
     },
     "relationships": {
     }
@@ -341,7 +341,7 @@ email | email of the user also used for logging in
 status | status of the user, Can be active or inactive 
 organization_id | ID of the user’s organization
 team_id | ID of the user’s team in the organization
-kind | kind of user, Can be “Team” or “Organization”
+kind | kind of user, Can be "Team" or "Organization"
 send_task_notifications | Set to true if the user receives emails when events occur around tasks
 has_daily_digest | Set to true if the user receives a daily email digest
 created_at | time user was created in their organization’s time zone
